@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Download, MapPin, Calendar, Code, Server, Cloud } from 'lucide-react';
+import bakuImg from '../assets/baku.jpg';
 
 const Hero: React.FC = () => {
   const [currentTitle, setCurrentTitle] = useState(0);
@@ -106,7 +107,7 @@ const Hero: React.FC = () => {
             <div className="absolute inset-2 bg-gradient-to-r from-slate-900 to-purple-900 rounded-full"></div>
             <div className="absolute inset-4 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-500">
               <img
-                src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
+                src={bakuImg}
                 alt="Abhishek Badak"
                 className="w-full h-full object-cover"
               />
