@@ -32,19 +32,19 @@ const About: React.FC = () => {
 
   const achievements = [
     {
-      year: '2023',
+      year: '2025',
       title: 'Started DevOps Journey',
       description: 'Began exploring container technologies and CI/CD pipelines',
       icon: Target,
     },
     {
-      year: '2024',
+      year: '2025',
       title: 'Cloud Projects',
       description: 'Successfully deployed multiple applications on AWS and Azure',
       icon: Cloud,
     },
     {
-      year: '2024',
+      year: '2025',
       title: 'Open Source Contributor',
       description: 'Contributing to DevOps tools and sharing knowledge with the community',
       icon: Award,
