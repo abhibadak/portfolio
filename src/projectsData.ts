@@ -1,4 +1,4 @@
-const githubBase = 'https://github.com/abhibadak/portfolio/tree/main/';
+const githubBase = 'https://github.com/abhibadak/summer_internship_project/tree/main/';
 
 const projectsData = [
   // PYTHON
@@ -123,7 +123,7 @@ const projectsData = [
     description: 'Running a tool in Docker.',
     category: 'Docker',
     type: 'project',
-    github: githubBase + 'run software in doc',
+    github: githubBase + 'run%20software%20in%20doc',
   },
   {
     title: 'Apache Webserver in Docker',
