@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Github, Linkedin, Download, MapPin, Calendar, Code, Server, Cloud } from 'lucide-react';
-import bakuImg from '../assets/baku.jpg';
+import profileImg from '../assets/profile.jpg';
 
 const Hero: React.FC = () => {
   const [currentTitle, setCurrentTitle] = useState(0);
@@ -102,14 +102,14 @@ const Hero: React.FC = () => {
         {/* Right Column - Profile & Stats */}
         <div className={`space-y-8 transform transition-all duration-1000 delay-300 ${isVisible ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
           {/* Profile Image with Holographic Effect */}
-          <div className="relative mx-auto w-80 h-80 group">
+          <div className="relative mx-auto w-80 h-80 group sm:w-60 sm:h-60 xs:w-40 xs:h-40">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full animate-spin-slow opacity-75"></div>
             <div className="absolute inset-2 bg-gradient-to-r from-slate-900 to-purple-900 rounded-full"></div>
             <div className="absolute inset-4 bg-gradient-to-r from-purple-400 to-cyan-400 rounded-full overflow-hidden group-hover:scale-110 transition-transform duration-500">
               <img
-                src={bakuImg}
+                src={profileImg}
                 alt="Abhishek Badak"
-                className="w-full h-full object-cover"
+                className="w-full h-full max-w-full max-h-full object-cover object-center rounded-full border-4 border-white/20 shadow-lg"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-purple-900/50 to-transparent"></div>
             </div>
