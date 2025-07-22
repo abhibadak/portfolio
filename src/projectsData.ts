@@ -146,6 +146,73 @@ const projectsData = [
     type: 'blog',
     linkedin: 'https://www.linkedin.com/posts/abhishek-badak-73899228a_linuxworld-docker-systemd-activity-7350193542834671616-Lb3d?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEZEtpwBTfFT_srSGnojRyxL45A1Cq_9HGU',
   },
+
+  // JAVASCRIPT HANDS-ON TASKS
+  {
+    title: 'Take a Photo using JavaScript',
+    description: 'Capture a photo using your webcam with JavaScript.',
+    category: 'JavaScript',
+    type: 'project',
+    live: 'webcam.html',
+  },
+  {
+    title: 'Send Email using JavaScript',
+    description: 'Send an email directly from the browser using JavaScript.',
+    category: 'JavaScript',
+    type: 'project',
+    github: 'email-backend',
+  },
+  {
+    title: 'Send Captured Photo to Email using JavaScript',
+    description: 'Capture a photo and send it to an email address using JavaScript.',
+    category: 'JavaScript',
+    type: 'project',
+    github: 'email-photo-backend',
+  },
+  {
+    title: 'Send WhatsApp Message using JavaScript',
+    description: 'Send a WhatsApp message using JavaScript.',
+    category: 'JavaScript',
+    type: 'project',
+    github: 'whatsapp-js',
+  },
+  {
+    title: 'Show Current Geo Location',
+    description: 'Display your current geo location using JavaScript.',
+    category: 'JavaScript',
+    type: 'project',
+    live: 'geo-location-app',
+  },
+  {
+    title: 'Show Route from Current Location to Destination',
+    description: 'Show a route from your current location to a destination using JavaScript.',
+    category: 'JavaScript',
+    type: 'project',
+    live: 'route.html',
+  },
+  {
+    title: 'Track Most Viewed Products and Show Recommendation',
+    description: 'Track product views and show recommendations using JavaScript.',
+    category: 'JavaScript',
+    type: 'project',
+    live: 'product-tracker.html',
+  },
+  {
+    title: 'Send SMS using JavaScript',
+    description: 'Send a message using JavaScript and Twilio.',
+    category: 'JavaScript',
+    type: 'project',
+    github: 'TwilioSMS',
+  },
+
+  // PYTHON + DOCKER HANDS-ON TASKS
+  {
+    title: 'Run Flask App inside Docker',
+    description: 'Run a Flask application inside a Docker container.',
+    category: 'Python + Docker',
+    type: 'project',
+    github: 'run software in doc',
+  },
 ];
 
 export default projectsData; 
