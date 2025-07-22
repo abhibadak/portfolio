@@ -5,7 +5,7 @@ import projectsData from '../projectsData';
 const categoryGradients: Record<string, string> = {
   JavaScript: 'bg-gradient-to-br from-orange-400 via-pink-500 to-pink-400', // 1st card style
   Docker: 'bg-gradient-to-br from-green-400 via-teal-400 to-teal-500', // 2nd card style
-  Python: 'bg-gradient-to-br from-pink-200 via-purple-300 to-purple-400', // 5th card style
+  Python: 'bg-gradient-to-br from-[#FCE7F3] to-[#E0F2FE]', // 5th card style
   'Python + Docker': 'bg-gradient-to-br from-blue-400 via-blue-500 to-blue-600', // 3rd card style
 };
 
@@ -71,7 +71,7 @@ const Projects: React.FC = () => {
             } else if (project.category === 'Docker') {
               buttonGradient = 'bg-gradient-to-r from-green-400 to-teal-500 hover:opacity-90';
             } else if (project.category === 'Python') {
-              buttonGradient = 'bg-gradient-to-r from-pink-200 to-purple-400 hover:opacity-90';
+              buttonGradient = 'bg-gradient-to-r from-pink-200 to-blue-200 hover:opacity-90';
               buttonText = 'text-gray-900';
             } else if (project.category === 'Python + Docker') {
               buttonGradient = 'bg-gradient-to-r from-blue-400 to-blue-600 hover:opacity-90';
@@ -82,11 +82,23 @@ const Projects: React.FC = () => {
                 className={`rounded-2xl shadow-lg p-6 flex flex-col justify-between transition-transform duration-200 hover:scale-105 hover:shadow-2xl border border-white/10 group ${cardGradient}`}
               >
                 <div>
-                  <h3 className="text-xl font-bold mb-2 text-white group-hover:text-purple-200 transition-colors">
+                  <h3
+                    className={`text-xl font-bold mb-2 transition-colors ${
+                      project.category === 'Python'
+                        ? 'text-slate-800 group-hover:text-purple-500'
+                        : 'text-white group-hover:text-purple-200'
+                    }`}
+                  >
                     {project.title}
                   </h3>
                   {project.description && (
-                    <p className="text-white/80 mb-4 text-sm">{project.description}</p>
+                    <p
+                      className={`text-sm mb-4 ${
+                        project.category === 'Python' ? 'text-slate-600' : 'text-white/80'
+                      }`}
+                    >
+                      {project.description}
+                    </p>
                   )}
                 </div>
                 <div className="flex gap-3 mt-4">
