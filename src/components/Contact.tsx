@@ -63,9 +63,7 @@ const Contact: React.FC = () => {
         response = `Core skills: DevOps, Docker, Kubernetes, AWS, CI/CD, Python, JavaScript`;
         break;
       case 'contact':
-        response = `📧 Email: abhishek.badak@email.com
-📱 Phone: +91 XXXXX XXXXX
-📍 Location: Aurangabad, Maharashtra, India`;
+        response = `📧 Email: badakabhishek170@gmail.com\n📱 Phone: 9175510587\n📍 Location: Aurangabad, Maharashtra, India`;
         break;
       case 'clear':
         setTerminalOutput([
@@ -112,15 +110,15 @@ const Contact: React.FC = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'abhishek.badak@email.com',
-      href: 'mailto:abhishek.badak@email.com',
+      value: 'badakabhishek170@gmail.com',
+      href: 'mailto:badakabhishek170@gmail.com',
       color: 'from-red-500 to-red-600'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 XXXXX XXXXX',
-      href: 'tel:+91XXXXXXXXX',
+      value: '9175510587',
+      href: 'tel:9175510587',
       color: 'from-green-500 to-green-600'
     },
     {
@@ -276,7 +274,7 @@ const Contact: React.FC = () => {
                   </div>
                   <div className="flex items-center space-x-2 text-white/60">
                     <Terminal size={16} />
-                    <span className="text-sm font-fira-code">contact@abhishek-badak.dev</span>
+                    <span className="text-sm font-fira-code">badakabhishek170@gmail.com</span>
                   </div>
                 </div>
               </div>
